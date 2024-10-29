@@ -3,6 +3,7 @@
 [![PyPI version qa-metrics](https://img.shields.io/pypi/v/qa-metrics.svg)](https://pypi.org/project/qa-metrics/) 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ke23KIeHFdPWad0BModmcWKZ6jSbF5nI?usp=sharing)
 
+> Main [Repository] (https://github.com/zli12321/qa_metrics)
 > A fast and lightweight Python package for evaluating question-answering models and prompting of black-box and open-source large language models.
 
 ## 🎉 Latest Updates
@@ -34,7 +35,8 @@ Our package offers six QA evaluation methods with varying strengths:
 |--------|----------|------|--------------------------------|
 | Normalized Exact Match | Short-form QA (NQ-OPEN, HotpotQA, etc.) | Free | Good |
 | PEDANTS | Both short & medium-form QA | Free | Very High |
-| Transformer Neural Evaluation | Both short & long-form QA | Free | High |
+| [Neural Evaluation](https://huggingface.co/zli12321/answer_equivalence_tiny_bert) | Both short & long-form QA | Free | High |
+| [Open Source LLM Evaluation](https://huggingface.co/zli12321/prometheus2-2B) | All QA types | Free | High |
 | Black-box LLM Evaluation | All QA types | Paid | Highest |
 
 ## 📖 Documentation
@@ -151,7 +153,8 @@ match_result = pedant.evaluate(reference_answer, candidate_answer, question)
 ```python
 from qa_metrics.transformerMatcher import TransformerMatcher
 
-tm = TransformerMatcher("zli12321/answer_equivalence_roberta-large")
+### supports `zli12321/answer_equivalence_bert`, `zli12321/answer_equivalence_distilbert`, `zli12321/answer_equivalence_roberta`, `zli12321/answer_equivalence_distilroberta`
+tm = TransformerMatcher("zli12321/answer_equivalence_tiny_bert")
 match_result = tm.transformer_match(reference_answer, candidate_answer, question)
 ```
 
