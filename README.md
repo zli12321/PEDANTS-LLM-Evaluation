@@ -3,6 +3,8 @@
 [![PyPI version qa-metrics](https://img.shields.io/pypi/v/qa-metrics.svg)](https://pypi.org/project/qa-metrics/) 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ke23KIeHFdPWad0BModmcWKZ6jSbF5nI?usp=sharing)
 
+> Check out the main [Repo](https://github.com/zli12321/qa_metrics)
+
 > A fast and lightweight Python package for evaluating question-answering models and prompting of black-box and open-source large language models.
 
 ## 🎉 Latest Updates
