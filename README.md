@@ -3,9 +3,6 @@
 [![PyPI version qa-metrics](https://img.shields.io/pypi/v/qa-metrics.svg)](https://pypi.org/project/qa-metrics/) 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ke23KIeHFdPWad0BModmcWKZ6jSbF5nI?usp=sharing)
 
-> Main [Repository](https://github.com/zli12321/qa_metrics)
-
-
 > A fast and lightweight Python package for evaluating question-answering models and prompting of black-box and open-source large language models.
 
 ## 🎉 Latest Updates
@@ -89,6 +86,15 @@ match_result = f1_match(reference_answer, candidate_answer, threshold=0.5)
 
 ### 3. PEDANTS
 
+#### Method: `get_score`
+**Parameters**
+- `reference_answer` (str): A Gold answer
+- `candidate_answer` (str): Candidate answer to evaluate
+- `question` (str): The question being evaluated
+
+**Returns**
+- `float`: The similarity score between two strings (0 to 1)
+
 #### Method: `get_highest_score`
 **Parameters**
 - `reference_answer` (list of str): List of gold answers
@@ -142,6 +148,33 @@ match_result = pedant.evaluate(reference_answer, candidate_answer, question)
 ```
 
 ### 4. Transformer Neural Evaluation
+
+#### Method: `get_score`
+**Parameters**
+- `reference_answer` (str): A Gold answer
+- `candidate_answer` (str): Candidate answer to evaluate
+- `question` (str): The question being evaluated
+
+**Returns**
+- `float`: The similarity score between two strings (0 to 1)
+
+#### Method: `get_highest_score`
+**Parameters**
+- `reference_answer` (list of str): List of gold answers
+- `candidate_answer` (str): Candidate answer to evaluate
+- `question` (str): The question being evaluated
+
+**Returns**
+- `dictionary`: Contains the gold answer and candidate answer pair with highest matching score
+
+#### Method: `get_scores`
+**Parameters**
+- `reference_answer` (list of str): List of gold answers
+- `candidate_answer` (str): Candidate answer to evaluate
+- `question` (str): The question being evaluated
+
+**Returns**
+- `dictionary`: Contains matching scores for all gold answer and candidate answer pairs
 
 #### Method: `transformer_match`
 **Parameters**
@@ -240,6 +273,9 @@ Our fine-tuned models are available on Huggingface:
 
 This project is licensed under the [MIT License](LICENSE.md).
 
+## 📬 Contact
+
+For questions or comments, please contact: zli12321@umd.edu
 ## 📬 Contact
 
 For questions or comments, please contact: zli12321@umd.edu
