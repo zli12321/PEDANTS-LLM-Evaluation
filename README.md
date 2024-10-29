@@ -276,6 +276,3 @@ This project is licensed under the [MIT License](LICENSE.md).
 ## 📬 Contact
 
 For questions or comments, please contact: zli12321@umd.edu
-## 📬 Contact
-
-For questions or comments, please contact: zli12321@umd.edu
