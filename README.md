@@ -5,6 +5,8 @@
 
 > Check out the main [Repo](https://github.com/zli12321/qa_metrics)
 
+> `pip install qa-metrics` is all you need!
+
 > A fast and lightweight Python package for evaluating question-answering models and prompting of black-box and open-source large language models.
 
 ## 🎉 Latest Updates
