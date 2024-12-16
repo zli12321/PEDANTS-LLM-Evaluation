@@ -9,6 +9,8 @@
 
 > A fast and lightweight Python package for evaluating question-answering models and prompting of black-box and open-source large language models.
 
+> 🤗 Huggingface [Model](https://huggingface.co/zli12321/roberta-large-qa-evaluator) and [Dataset](https://huggingface.co/datasets/zli12321/pedants_qa_evaluation_bench)
+
 ## 🎉 Latest Updates
 
 - **Version 0.2.19 Released!**
